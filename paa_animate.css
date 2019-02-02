@@ -54,11 +54,13 @@ div.sprite {
 }
 
 div#bat {
-   width: 40px 50px;
-   height: 40px 50px;
+   width: 40px;
+   height: 50px;
    top: 100px;
    left: -50px;
    background: url(paa_bat.png) left center/ cover no-repeat;
+   animation: playSprite 2s steps(39) infinite;
+   animation: flyRight 8s linear infinite;
 }
 
 div#butterfly {
@@ -67,6 +69,8 @@ div#butterfly {
    top: 60px;
    left: -50px;
    background: url(paa_bfly.png) left center/ cover no-repeat;
+   animation: playSprite 2s steps(33) 3s infinite;
+   animation: flyRight 6s cubic-bezier(0,1,0.73,0) infinite;
 }
 
 div#fox {
@@ -75,7 +79,7 @@ div#fox {
    bottom:10px;
    right: 10px;
    background: url(paa_fox.png) left center/ cover no-repeat;
-   animation: playSprite 3.5s steps(27) 2s infinite;
+   animation: playSprite 3.5s steps(27) 4s infinite;
 }
 
 /* Animation Styles */
